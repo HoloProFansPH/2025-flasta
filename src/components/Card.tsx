@@ -1,4 +1,4 @@
-import { ReactElement, JSXElementConstructor } from "react";
+import type {ReactElement, JSXElementConstructor} from "react";
 
 function Card(props: { text: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>>; }) {
     return(
