@@ -23,6 +23,12 @@ function App() {
                   <SocMedButton link="https://twitter.com/HoloProFansPH" icon="fab fa-twitter" />
                   <SocMedButton link="mailto:holoprofansph@gmail.com" icon="fas fa-envelope" />
               </div>
+              <div className="socmedRow">
+                  <SocMedButton link="https://ph-starlights.carrd.co/" icon="fas fa-globe" />
+                  <SocMedButton link="https://www.facebook.com/PHStarlights/" icon="fab fa-facebook-f" />
+                  <SocMedButton link="https://twitter.com/ph_starlights" icon="fab fa-twitter" />
+                  <SocMedButton link="mailto:phstarlights001@gmail.com" icon="fas fa-envelope" />
+              </div>
               <p id="credits">
                   Project organized by HoloPro Fans PH and PH Starlights.<br/>
                   This is a non-profit fan-made project.<br/>
