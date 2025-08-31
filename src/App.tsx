@@ -17,12 +17,16 @@ function App() {
                   <Route path="/" element={<Home/>}/>
                   <Route path="/soon" element={<ComingSoon/>}/>
               </Routes>
+              <br /><br />
+              <img src="/img/hpfph_socmed.webp" alt="HoloPro Fans PH"/>
               <div className="socmedRow">
                   <SocMedButton link="https://holoprofansph.org" icon="fas fa-globe" />
                   <SocMedButton link="https://facebook.com/HoloProFansPH" icon="fab fa-facebook-f" />
                   <SocMedButton link="https://twitter.com/HoloProFansPH" icon="fab fa-twitter" />
                   <SocMedButton link="mailto:holoprofansph@gmail.com" icon="fas fa-envelope" />
               </div>
+              <br /><br />
+              <img src="/img/phstarlights_socmed.webp" alt="PH Starlights"/>
               <div className="socmedRow">
                   <SocMedButton link="https://ph-starlights.carrd.co/" icon="fas fa-globe" />
                   <SocMedButton link="https://www.facebook.com/PHStarlights/" icon="fab fa-facebook-f" />
