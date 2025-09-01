@@ -190,7 +190,7 @@ dialog {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .socmedButton {
   display: flex;
@@ -404,10 +404,28 @@ dialog {
   padding-right: 0.5rem;
 }
 
-#certificatePhoto {
+#mainPhoto {
   width: 100%;
   border-radius: 1rem;
   margin-bottom: 1rem;
+}
+
+#flasta-2024 {
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  padding: 0;
+  width: 100%;
+}
+#flasta-2024-content {
+  z-index: 1;
+  margin: 2rem 2rem;
+}
+#flasta-2024-bg {
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 #haribonLogo {

@@ -40,7 +40,7 @@ function App() {
               </p>
           </div>
           {/*<img id="bgGlobe" src="/img/moomin moa web.webp" alt="MOA Globe"/>*/}
-          <img id="bg" src="/img/2025-flasta-bg.jpg" alt="background"/>
+          <img id="bg" src="/img/2025-flasta-bg.webp" alt="background"/>
       </Router>
   )
 }

@@ -28,15 +28,17 @@ function Home() {
                     <MainButton link="https://forms.gle/u2vfbmVPvRRJRh268" img="ph.svg" text="Donate Locally (PH)"/>
                     <Modal />
                 </div>
-                {/*<GoalTracker/>
-                <Card text={<Fragment>
-                    <img id="certificatePhoto" src="/img/certificate-photo.jpg" alt="Photo of Mumei plushies with HARIBON Foundation certificate"/>
-                    <br/><strong>Campaign Ended on April 30, 2025.</strong><br/>
-                    Excess money after the GOLDEN GOAL worth PHP 27,763.51 was donated to HARIBON Foundation, an environmental
-                    conservation organization based in the Philippines.<br/>
-                    <a href="https://haribon.org.ph/" target="_blank"><img id="haribonLogo" src="/img/haribon-logo-full.png" alt="HARIBON Foundation"/></a>
-                </Fragment>}/>*/}
+                {/*<GoalTracker/>*/}
                 <FAQ/>
+                <div id="flasta-2024" className="card">
+                    <p id="flasta-2024-content">
+                        <img src="/img/2024-flasta-logo.webp" alt="HoloFlasta Project 2024"/><br/><br/>
+                        <img id="mainPhoto" src="/img/2024-flasta.webp" alt="Photo of 2024 HoloFlasta"/>
+                        <br/><strong>Campaign Ended on October 6, 2024.</strong><br/>
+                        HoloPro Fans PH was responsible for organizing the <strong>HoloFlasta 2024 Project</strong> in collaboration with other local hololive and HOLOSTARS community members as well as the donations of the community, which produced two flower stands dedicated to Anya Melfissa, Jurard T. Rexford, Octavio, and Vestia Zeta for Cosplay Mania 2024!<br/>
+                    </p>
+                    <img id="flasta-2024-bg" src="/img/2024-flasta-bg.webp" />
+                </div>
                 <ProjectsList/>
             </div>
         </div>
