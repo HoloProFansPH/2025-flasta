@@ -334,13 +334,13 @@ dialog {
   height: 1.5rem;
   width: calc(100% - 1rem);
   background-color: transparent;
-  border: #bbbbbb 0.25rem solid;
+  border: #334340 0.25rem solid;
   padding: 0.25rem;
   border-radius: 1.5rem;
 }
 #goalMeterComplete {
   /*background-color: #54b3a1;*/
-  background-color: #ffcc59;
+  background-color: #24AB8E;
   width: 1%;
   height: 100%;
   border-radius: 1.5rem;

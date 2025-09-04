@@ -3,7 +3,7 @@ import HomeDescription from "./components/HomeDescription.tsx";
 /*import Card from "./components/Card.tsx";
 import { Fragment } from "react";*/
 import MainButton from "./components/MainButton.tsx";
-//import GoalTracker from "./components/GoalTracker.tsx";
+import GoalTracker from "./components/GoalTracker.tsx";
 import FAQ from "./components/FAQ.tsx";
 import ProjectsList from "./components/ProjectsList.tsx"
 import Modal from "./components/Modal.tsx";
@@ -28,7 +28,7 @@ function Home() {
                     <MainButton link="https://forms.gle/u2vfbmVPvRRJRh268" img="ph.svg" text="Donate Locally (PH)"/>
                     <Modal />
                 </div>
-                {/*<GoalTracker/>*/}
+                <GoalTracker/>
                 <FAQ/>
                 <div id="flasta-2024" className="card">
                     <p id="flasta-2024-content">
