@@ -117,6 +117,9 @@ function GoalTracker() {
                     </span>
 
             </div>*/}
+            <p>
+                For international transactions, the exchange rate is calculated as USD 1 = PHP52.06, which is derived from the conversion rate provided by PayPal (Kofi's payment processor) on August 31, 2025, in addition to other conversion and international transfer fees issued by PayPal. The actual, current exchange rate may differ from the rate used for this tracker.
+            </p>
         </div>
     );
 }
