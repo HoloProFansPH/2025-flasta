@@ -568,6 +568,9 @@ dialog {
     flex-direction: column;
     justify-content: center;
   }
+  #goalMeterComplete {
+    min-width: 6%;
+  }
   .goalItem {
     flex-direction: column;
     justify-content: left;

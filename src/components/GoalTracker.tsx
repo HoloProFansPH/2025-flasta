@@ -91,7 +91,7 @@ function GoalTracker() {
     return (
         <div className="card">
             <div className="cardHeader">
-                <span className="cardTitle">GOAL</span>
+                <span className="cardTitle">Goal</span>
                 <span id="goalNameDesktop">In Progress: <i>{currentGoalName}</i></span>
                 {/*<span id="goalNameDesktop">Completed: <i>{currentGoalName}</i></span>*/}
                 <span className="cardTitle">{currentGoalPercentageDisplay}</span>
