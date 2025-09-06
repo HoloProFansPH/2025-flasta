@@ -464,7 +464,7 @@ dialog {
 .projectItem {
   display: flex;
   justify-content: space-between;
-  border: 0.25rem solid #bbbbbb;
+  border: 0.25rem solid #334340;
   padding: 1rem;
   border-radius: 1rem;
   text-decoration: none;
@@ -474,8 +474,14 @@ dialog {
   transition: 0.3s;
 }
 .projectItem:hover {
-  border-color: #334340;
+  border-color: #008EA8;
+  color: #008EA8;
 }
+.projectItem:active {
+  border-color: #24AB8E;
+  color: #24AB8E;
+}
+
 .projectItemText {
   display: flex;
   gap: 1rem;
