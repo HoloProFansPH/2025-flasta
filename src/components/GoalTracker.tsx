@@ -5,10 +5,10 @@ import axios from "axios";
 function GoalTracker() {
     const [currentGoalName, setCurrentGoalName] = useState("---");
     const [currentGoalPercentage, setCurrentGoalPercentage] = useState(0);
-    const [currentGoalPercentageDisplay, setCurrentGoalPercentageDisplay] = useState<string>("123.63%");
+    const [currentGoalPercentageDisplay, setCurrentGoalPercentageDisplay] = useState<string>("--.--%");
     const [donationAmount, setDonationAmount] = useState(0.00);
     const [currentCheckpointPHP, setCurrentCheckpointPHP] = useState(1.00);
-    /*const [deadline, setDeadline] = useState(Date.now());*/
+    const [deadline, setDeadline] = useState(Date.now());
     //const [currentTime, setCurrentTime] = useState();
     /*const CountdownRenderer = ({ days, hours, minutes, seconds }) => (
         <>
@@ -30,7 +30,7 @@ function GoalTracker() {
             return(<></>);
         }
     }*/
-    /*const Timer = () => {
+    const Timer = () => {
         //console.log(deadline);
         const [days, setDays] = useState(0);
         const [hours, setHours] = useState(0);
@@ -57,12 +57,12 @@ function GoalTracker() {
                 {days}d {hours}h {minutes}m {seconds}s
             </span>
         );
-    };*/
+    };
 
     const fetchGoal = async () => {
         try {
             const result = await axios.get(import.meta.env.VITE_API_URL, { headers: { "auth": import.meta.env.VITE_API_AUTH } });
-            console.log(result.data);
+            //console.log(result.data);
             setCurrentGoalName(result.data.currentGoalName);
             setCurrentGoalPercentage(Number(result.data.currentGoalPercentage));
             setCurrentGoalPercentageDisplay(percentage(result.data.currentGoalPercentage));
@@ -72,7 +72,7 @@ function GoalTracker() {
             setCurrentCheckpointPHP(result.data.currentCheckpointPHP.toLocaleString(
                 undefined, { minimumFractionDigits: 2 }
             ));
-            /*setDeadline(Date.parse(result.data.deadline));*/
+            setDeadline(Date.parse(result.data.deadline));
             //setCurrentTime(result.data.currentTime);
             //console.log(deadline)
         } catch (error) {
@@ -81,7 +81,7 @@ function GoalTracker() {
     };
     useEffect(() => {
         fetchGoal();
-        console.log(import.meta.env.VITE_API_URL);
+        //console.log(import.meta.env.VITE_API_URL);
     }, []);
     useEffect(() => {
         const fetchInterval = setInterval(() => fetchGoal(), 60000);
@@ -103,7 +103,7 @@ function GoalTracker() {
             {/*<span id="goalNameMobile">In Progress: <i>{currentGoalName}</i></span>*/}
             <span id="goalNameMobile">In Progress: <i>{currentGoalName}</i></span>
             <div className="goalMeterData">
-                {/*<span><i className="fa fa-clock"></i> {deadline}<Timer /></span>*/}
+                <span><i className="fa fa-clock"></i><Timer /></span>
                 <span><i className="fa fa-flag-checkered"></i> PHP {donationAmount} / PHP {currentCheckpointPHP}</span>
             </div>
             {/*<div className="tableFlex">

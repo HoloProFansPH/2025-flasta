@@ -19,7 +19,7 @@ function FAQ() {
             <div className="tableFlex">
                 <FAQitem q={<Fragment>What is <i>HoloPro Fans PH?</i> What is <i>PH Starlights?</i></Fragment>} a="HoloPro Fans PH is an organization that produces hololive & HOLOSTARS
 fan projects and events in the Philippines, both online and offline. HoloPro Fans PH has also been responsible for the 2024 HoloFlasta Project. PH Starlights is an unoffcial fan group dedicated to supporting
-HOLOSTARS, UPROAR!!, and HOLOSTARS English as a whole. Both HoloPro Fans PH and Starlights PH are collaborating on the 2025 HoloFlasta Project while abiding by COVER Corp.'s Fan Support Advertising Guidelines."/>
+HOLOSTARS, UPROAR!!, and HOLOSTARS English as a whole. Both HoloPro Fans PH and PH Starlights are collaborating on the 2025 HoloFlasta Project while abiding by COVER Corp.'s Fan Support Advertising Guidelines."/>
                 <FAQitem q={<Fragment>How can I support <i>HoloFlasta Project?</i></Fragment>} a="You can send your donations at flasta.holoprofansph.org via our official Ko-fi under ko-fi.com/phstarlights0603. For fans
 residing in the Philippines, you can donate locally via GCash, Maya, GoTyme, BDO, and BPI."/>
                 <FAQitem q="What happens if the goal is not reached?" a="The organizers may seek compromises to the original goal of the project to fit the final donation amount."/>
