@@ -4,7 +4,7 @@ import axios from "axios";
 
 function GoalTracker() {
     const [currentGoalName, setCurrentGoalName] = useState("---");
-    //const [currentGoalPercentage, setCurrentGoalPercentage] = useState(0);
+    const [currentGoalPercentage, setCurrentGoalPercentage] = useState(0);
     const [currentGoalPercentageDisplay, setCurrentGoalPercentageDisplay] = useState<string>("--.--%");
     const [donationAmount, setDonationAmount] = useState(0.00);
     const [currentCheckpointPHP, setCurrentCheckpointPHP] = useState(1.00);
@@ -64,7 +64,7 @@ function GoalTracker() {
             const result = await axios.get(import.meta.env.VITE_API_URL, { headers: { "auth": import.meta.env.VITE_API_AUTH } });
             //console.log(result.data);
             setCurrentGoalName(result.data.currentGoalName);
-            //setCurrentGoalPercentage(Number(result.data.currentGoalPercentage));
+            setCurrentGoalPercentage(Number(result.data.currentGoalPercentage));
             setCurrentGoalPercentageDisplay(percentage(result.data.currentGoalPercentage));
             setDonationAmount(result.data.donationAmount.toLocaleString(
                 undefined, { minimumFractionDigits: 2 }
@@ -97,8 +97,7 @@ function GoalTracker() {
                 <span className="cardTitle">{currentGoalPercentageDisplay}</span>
             </div>
             <div id="goalMeter">
-                <div id="goalMeterComplete" style={{width: "100%"}}>
-                    {/*(currentGoalPercentage * 100) + '%'*/}
+                <div id="goalMeterComplete" style={{width: (currentGoalPercentage * 100) + '%'}}>
                 </div>
             </div>
             {/*<span id="goalNameMobile">In Progress: <i>{currentGoalName}</i></span>*/}
