@@ -39,7 +39,8 @@ function App() {
                   Not affiliated with COVER Corp.
               </p>
           </div>
-          {/*<img id="bgGlobe" src="/img/moomin moa web.webp" alt="MOA Globe"/>*/}
+          <img id="bgClouds" src="/img/bg-clouds.webp" alt="background element clouds"/>
+          <img id="bgCity" src="/img/bg-city.webp" alt="background element city"/>
           <img id="bg" src="/img/2025-flasta-bg.webp" alt="background"/>
       </Router>
   )
