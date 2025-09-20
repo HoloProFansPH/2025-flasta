@@ -28,7 +28,7 @@ function Modal(){
                     <br /><br />
                     d) By donating, you give us (the <b>"HoloFlasta 2025 Project"</b>) your consent of your personal information. In case there is a violation of the use of your personal information, you may exercise your rights as stated in Republic Act 10173 or the Data Privacy Act of 2012.
                     <br /><br />
-                    NOTE: In addition, those who donate a minimum of USD $25 (or more!) before FRIDAY, September 19, 2025 at 11:59 PM (PHT) will have their name featured on a separate sintra board at one of the Flastas!
+                    NOTE: In addition, those who donate a minimum of USD $25 (or more!) before FRIDAY, September 26, 2025 at 11:59 PM (PHT) will have their name featured on a separate sintra board at one of the Flastas!
                     <br /><br />
                     If you <b>agree</b> with the above, feel free to proceed to the Ko-fi to donate:
                     <br /><br />
