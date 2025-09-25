@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
-//import GoalItem from "./GoalItem.tsx";
+import GoalItem from "./GoalItem.tsx";
 
 function GoalTracker() {
     const [currentGoalName, setCurrentGoalName] = useState("---");
@@ -106,17 +106,13 @@ function GoalTracker() {
                 <span><i className="fa fa-clock"></i><Timer /></span>
                 <span><i className="fa fa-flag-checkered"></i> PHP {donationAmount} / PHP {currentCheckpointPHP}</span>
             </div>
-            {/*<div className="tableFlex">
-                <GoalItem complete goalName="Minimum Goal" goalDescription="20-second ad on April 26, 2025" goalAmount="PHP 78,400 ~USD 1,500"/>
-                <GoalItem complete goalName="GOLDEN GOAL" goalDescription="increased to a 30-second ad on April 26, 2025" goalAmount="PHP 117,600 ~USD 2,200"/>
-                <GoalItem ongoing goalName="BONUS GOAL A" goalDescription="30-second ads on April 26 & 27, 2025" goalAmount="PHP 235,200 ~USD 4,300"/>
-                <GoalItem goalName="BONUS GOAL B" goalDescription="30-second ads on April 26, 27 & May 2, 2025" goalAmount="PHP 352,800 ~USD 6,500"/>
-                <GoalItem goalName="WE MOOM GOAL" goalDescription="30-second ads for an entire week" goalAmount="PHP 604,800 ~USD 11,000"/>
-                    <span className="tableLeft">
+            <div className="tableFlex">
+                <GoalItem complete goalName="Minimum Goal" goalDescription="Four flower stands with half-body standees attached to flower stands" goalAmount="PHP 32,000 ~USD 550"/>
+                <GoalItem complete goalName="Stretch Goal" goalDescription="Four flower stands with chibi standees attached to flower stands and full-body standees" goalAmount="PHP 36,200 ~USD 620"/>
+                    {/*<span className="tableLeft">
                     <b>Notes:</b><br/>The Minimum Goal is due on April 14, 2025 11:59 AM PHT for the the project to comfortably proceed on April 26, 2025. Fans can still donate until April 30, 2025 11:59 AM PHT. Airdate is subject to change depending on airslot availability.
-                    </span>
-
-            </div>*/}
+                    </span>*/}
+            </div>
             <p>
                 For international transactions, the exchange rate is calculated as USD 1 = PHP52.06, which is derived from the conversion rate provided by PayPal (Kofi's payment processor) on August 31, 2025, in addition to other conversion and international transfer fees issued by PayPal. The actual, current exchange rate may differ from the rate used for this tracker.
             </p>
