@@ -431,6 +431,7 @@ dialog {
   width: 100%;
   border-radius: 1rem;
   margin-bottom: 1rem;
+  object-fit: cover;
 }
 
 #flasta-2024 {
