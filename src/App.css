@@ -298,6 +298,60 @@ dialog {
 .socmedRow a {
   text-decoration: none;
 }
+.artistList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+.artistItem {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  color: inherit;
+  text-decoration: none;
+}
+.artistInfo {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+.artistName {
+  font-weight: 700;
+}
+.donorNamesMain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+.donorNamesSub {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+.donorNamesMain span {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+.donorNamesSub span {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.donorNamesColumn {
+  display: flex;
+  flex-direction: column;
+  width: 16rem;
+}
 
 #galleryContent {
   display: flex;
@@ -603,6 +657,20 @@ dialog {
   }
   .mainButton {
     padding: 0.75rem;
+  }
+  .donorNamesMain {
+    flex-direction: column;
+    gap: 0;
+  }
+  .donorNamesMain span {
+
+  }
+  .donorNamesSub {
+    flex-direction: column;
+    gap: 0;
+  }
+  .donorNamesColumn {
+    width: auto;
   }
   #goalsTable {
     gap: 1rem;
