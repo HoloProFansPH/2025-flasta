@@ -353,6 +353,27 @@ dialog {
   width: 16rem;
 }
 
+.creditsObject {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+.creditsTitle {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.creditsNames {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 #galleryContent {
   display: flex;
   flex-wrap: wrap;
@@ -658,12 +679,14 @@ dialog {
   .mainButton {
     padding: 0.75rem;
   }
+  .artistInfo {
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+  }
   .donorNamesMain {
     flex-direction: column;
     gap: 0;
-  }
-  .donorNamesMain span {
-
   }
   .donorNamesSub {
     flex-direction: column;

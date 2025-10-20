@@ -7,6 +7,7 @@ import GoalTracker from "./components/GoalTracker.tsx";
 import FAQ from "./components/FAQ.tsx";
 import ProjectsList from "./components/ProjectsList.tsx"
 //import Modal from "./components/Modal.tsx";
+import CreditsItem from "./components/CreditsItem.tsx";
 function Home() {
     return (
         <div className="content">
@@ -133,14 +134,15 @@ function Home() {
                     <div className="cardHeader" style={{justifyContent: "center"}}>
                         <span className="cardTitle">Credits</span>
                     </div>
-                    <p style={{marginBlockStart: 0}}>
-                        Executive Producers: AwHellNao, acdi33<br/>
-                        Project Coordinators: xiaol0ngbob0, deirmentia<br/>
-                        Logistics Coordinator: violet2108<br/>
-                        Website: Madekuji_san<br/>
-                        Financials: Akiio_Tako<br/>
-                        Event Coordinator: jirusus, kurizu_joji<br/>
-                    </p>
+                    <div className="creditsContainer" style={{paddingBottom: "1rem"}}>
+                        <CreditsItem title="Executive Producers" names={["AwHellNao", "acdi33"]} />
+                        <CreditsItem title="Project Coordinators" names={["xiaol0ngbob0", "deirmentia"]} />
+                        <CreditsItem title="Creative Director" names={["MananaYt"]} />
+                        <CreditsItem title="Logistics Coordinator" names={["violet2108"]} />
+                        <CreditsItem title="Website and Systems" names={["Madekuji_san"]} />
+                        <CreditsItem title="Financials" names={["Akiio_Tako"]} />
+                        <CreditsItem title="Event Coordinators" names={["jirusus", "kurizu_joji"]} />
+                    </div>
                 </Fragment>}/>
                 <GoalTracker/>
                 <FAQ/>
