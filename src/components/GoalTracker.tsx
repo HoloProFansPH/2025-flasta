@@ -1,25 +1,25 @@
-import {useEffect, useState} from "react";
-import axios from "axios";
+/*import {useEffect, useState} from "react";
+import axios from "axios";*/
 import GoalItem from "./GoalItem.tsx";
 
 function GoalTracker() {
-    const [currentGoalName, setCurrentGoalName] = useState("---");
+    /*const [currentGoalName, setCurrentGoalName] = useState("---");
     const [currentGoalPercentage, setCurrentGoalPercentage] = useState(0);
     const [currentGoalPercentageDisplay, setCurrentGoalPercentageDisplay] = useState<string>("--.--%");
     const [donationAmount, setDonationAmount] = useState(0.00);
     const [currentCheckpointPHP, setCurrentCheckpointPHP] = useState(1.00);
-    const [deadline, setDeadline] = useState(Date.now());
+    const [deadline, setDeadline] = useState(Date.now());*/
     //const [currentTime, setCurrentTime] = useState();
     /*const CountdownRenderer = ({ days, hours, minutes, seconds }) => (
         <>
             {days}d {hours}h {minutes}m {seconds}s
         </>
     );*/
-    function percentage(number: number){
+    /*function percentage(number: number){
         return(
             Number(number).toLocaleString(undefined,{style: 'percent', minimumFractionDigits:2})
         )
-    }
+    }*/
     /*function CountdownDisplay() {
         if(deadline != null) {
             return(
@@ -30,7 +30,7 @@ function GoalTracker() {
             return(<></>);
         }
     }*/
-    const Timer = () => {
+    /*const Timer = () => {
         //console.log(deadline);
         const [days, setDays] = useState(0);
         const [hours, setHours] = useState(0);
@@ -57,9 +57,9 @@ function GoalTracker() {
                 {days}d {hours}h {minutes}m {seconds}s
             </span>
         );
-    };
+    };*/
 
-    const fetchGoal = async () => {
+    /*const fetchGoal = async () => {
         try {
             const result = await axios.get(import.meta.env.VITE_API_URL, { headers: { "auth": import.meta.env.VITE_API_AUTH } });
             //console.log(result.data);
@@ -86,25 +86,28 @@ function GoalTracker() {
     useEffect(() => {
         const fetchInterval = setInterval(() => fetchGoal(), 60000);
         return () => clearInterval(fetchInterval);
-    }, []);
+    }, []);*/
 
     return (
         <div className="card">
             <div className="cardHeader">
                 <span className="cardTitle">Goal</span>
-                <span id="goalNameDesktop">In Progress: <i>{currentGoalName}</i></span>
+                {/*<span id="goalNameDesktop">In Progress: <i>{currentGoalName}</i></span>*/}
                 {/*<span id="goalNameDesktop">Completed: <i>{currentGoalName}</i></span>*/}
-                <span className="cardTitle">{currentGoalPercentageDisplay}</span>
+                {/*<span className="cardTitle">{currentGoalPercentageDisplay}</span>*/}
+                <span id="goalNameDesktop">Completed: <i>Stretch Goal</i></span>
+                <span className="cardTitle">108.06%</span>
             </div>
             <div id="goalMeter">
-                <div id="goalMeterComplete" style={{width: (currentGoalPercentage * 100) + '%'}}>
-                </div>
+                {/*<div id="goalMeterComplete" style={{width: (currentGoalPercentage * 100) + '%'}}></div>*/}
+                <div id="goalMeterComplete" style={{width: 100 + '%'}}></div>
             </div>
             {/*<span id="goalNameMobile">In Progress: <i>{currentGoalName}</i></span>*/}
-            <span id="goalNameMobile">In Progress: <i>{currentGoalName}</i></span>
+            <span id="goalNameMobile">Completed: <i>Stretch Goal</i></span>
             <div className="goalMeterData">
-                <span><i className="fa fa-clock"></i><Timer /></span>
-                <span><i className="fa fa-flag-checkered"></i> PHP {donationAmount} / PHP {currentCheckpointPHP}</span>
+                {/*<span><i className="fa fa-clock"></i><Timer /></span>
+                <span><i className="fa fa-flag-checkered"></i> PHP {donationAmount} / PHP {currentCheckpointPHP}</span>*/}
+                <span><i className="fa fa-flag-checkered"></i> PHP 39,117.77 / PHP 36,200.00</span>
             </div>
             <div className="tableFlex">
                 <GoalItem complete goalName="Minimum Goal" goalDescription="Four flower stands with half-body standees attached to flower stands" goalAmount="PHP 32,000 ~USD 550"/>
